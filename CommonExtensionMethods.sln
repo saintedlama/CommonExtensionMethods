@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonExtensionMethods", "src\CommonExtensionMethods\CommonExtensionMethods.csproj", "{91ABF1EB-13BE-45AA-82C7-ED7BDC409725}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonExtensionMethodsTests", "src\CommonExtensionMethodsTests\CommonExtensionMethodsTests.csproj", "{24929368-10C0-4164-8B7D-BCCFA08F3FF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91ABF1EB-13BE-45AA-82C7-ED7BDC409725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91ABF1EB-13BE-45AA-82C7-ED7BDC409725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91ABF1EB-13BE-45AA-82C7-ED7BDC409725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91ABF1EB-13BE-45AA-82C7-ED7BDC409725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24929368-10C0-4164-8B7D-BCCFA08F3FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24929368-10C0-4164-8B7D-BCCFA08F3FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24929368-10C0-4164-8B7D-BCCFA08F3FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24929368-10C0-4164-8B7D-BCCFA08F3FF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
