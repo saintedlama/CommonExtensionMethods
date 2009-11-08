@@ -59,5 +59,35 @@ namespace CommonExtensionMethods.Enumerations
                 yield return item;
             }
         }
+
+        public static void ForEach<T>(this IEnumerable<T> source, Action<T> action)
+        {
+            ForEach(source, (i, item) => action(item));
+        }
+
+        public static void ForEach<T>(this IEnumerable<T> source, Action<int, T> action)
+        {
+            int i = 0;
+
+            foreach (var item in source)
+            {
+                action(i++, item);
+            }
+        }
+
+        public static IEnumerable<TTarget> ForEach<T, TTarget>(this IEnumerable<T> source, Func<T, TTarget> func)
+        {
+            return ForEach(source, (i, item) => func(item));
+        }
+
+        public static IEnumerable<TTarget> ForEach<T, TTarget>(this IEnumerable<T> source, Func<int, T, TTarget> func)
+        {
+            int i = 0;
+
+            foreach (var item in source)
+            {
+                yield return func(i++, item);
+            }
+        }
     }
 }
